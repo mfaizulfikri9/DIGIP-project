@@ -1,0 +1,21 @@
+program ProjectDIGIP;
+
+uses
+  Forms,
+  DIGIP1 in 'DIGIP1.pas' {Form1},
+  DIGIP2 in 'DIGIP2.pas' {FormBrightness},
+  DIGIP3 in 'DIGIP3.pas' {FormHistogram},
+  DIGIP4 in 'DIGIP4.pas' {FormContrast},
+  DIGIP5 in 'DIGIP5.pas' {FormThresholdTunggal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFormBrightness, FormBrightness);
+  Application.CreateForm(TFormHistogram, FormHistogram);
+  Application.CreateForm(TFormContrast, FormContrast);
+  Application.CreateForm(TFormThresholdTunggal, FormThresholdTunggal);
+  Application.Run;
+end.
